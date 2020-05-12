@@ -19,15 +19,7 @@ export const getFace = state => {
 };
 
 export default class Moods extends Component {
-  // state = {
-  //   coffees: 0,
-  //   snacks: 0,
-  //   naps: 0,
-  //   studies: 0
-  // }
-
-
-
+  
   render() {
     const { coffees, snacks, naps, studies } = this.state;
     const face = getFace(this.state);

@@ -15,6 +15,5 @@ export const takeNap = () => ({
 
 export const STUDY = 'STUDY';
 export const study = () => ({
-  type: STUDY,
-  payload: 'payload goes here',
+  type: STUDY
 });
