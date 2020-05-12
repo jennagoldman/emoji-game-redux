@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Controls from '../components/controls/Controls';
-import Face from '../components/face/Face';
+import Controls from '../components/Controls/Controls.jsx';
+import Face from '../components/Face/Face.jsx';
 
 export const isTired = state => state.coffees < 1 && state.naps < 1;
 export const isHyper = state => state.coffees > 3;
