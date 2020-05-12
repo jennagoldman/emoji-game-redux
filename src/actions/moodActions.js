@@ -1,19 +1,16 @@
 export const DRINK_COFFEE = 'DRINK COFFEE';
 export const drinkCoffee = () => ({
-  type: DRINK_COFFEE,
-  payload: 'payload goes here',
+  type: DRINK_COFFEE
 });
 
 export const EAT_SNACK = 'EAT SNACK';
 export const eatSnack = () => ({
-  type: EAT_SNACK,
-  payload: 'payload goes here',
+  type: EAT_SNACK
 });
 
 export const TAKE_NAP = 'TAKE_NAP';
 export const takeNap = () => ({
-  type: TAKE_NAP,
-  payload: 'payload goes here',
+  type: TAKE_NAP
 });
 
 export const STUDY = 'STUDY';
