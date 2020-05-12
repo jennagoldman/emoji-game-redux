@@ -8,18 +8,14 @@ const initialState = {
 export default function reducer(state = initialState, action) {
   switch(action.type) {
     case 'DRINK_COFFEE':
-      this.setState(state => ({ coffees: state.coffees + 1 }));
-      break;
+      return {...state, coffees: state.coffees + 1};
     case 'EAT_SNACK':
-      this.setState(state => ({ snacks: state.snacks + 1 }));
-      break;
+      return {...state, snacks: state.snacks + 1 };
     case 'TAKE_NAP':
-      this.setState(state => ({ naps: state.naps + 1 }));
-      break;
+      return {...state, naps: state.naps + 1 };
     case 'STUDY':
-      this.setState(state => ({ studies: state.studies + 1 }));
-      break;
+      return {...state, study: state.study + 1 };
     default:
-      console.log(`unhandled type: ${action.type}`);
+      return console.log(`unhandled type: ${action.type}`);
   }
 }
