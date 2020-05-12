@@ -1,0 +1,23 @@
+export const DRINK_COFFEE = 'DRINK COFFEE';
+export const drinkCoffee = () => ({
+  type: DRINK_COFFEE,
+  payload: 'payload goes here',
+});
+
+export const EAT_SNACK = 'EAT SNACK';
+export const eatSnack = () => ({
+  type: EAT_SNACK,
+  payload: 'payload goes here',
+});
+
+export const TAKE_NAP = 'TAKE_NAP';
+export const takeNap = () => ({
+  type: TAKE_NAP,
+  payload: 'payload goes here',
+});
+
+export const STUDY = 'STUDY';
+export const study = () => ({
+  type: STUDY,
+  payload: 'payload goes here',
+});
