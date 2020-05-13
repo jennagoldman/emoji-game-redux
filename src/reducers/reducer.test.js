@@ -5,9 +5,14 @@ describe('moods reducer', () => {
   it('handles the drinkCoffee action', () => {
     const state = { coffees: 0 };
     const action = drinkCoffee();
-
     const newState = reducer(state, action);
-
     expect(newState).toEqual({ coffees: 1 })
+  })
+
+  it('handles the eatSnack action', () => {
+    const state = { snacks: 1 };
+    const action = eatSnack();
+    const newState = reducer(state, action);
+    expect(newState).toEqual({ snacks: 2 })
   })
 })
