@@ -4,8 +4,8 @@ import Face from '../components/Face/Face.jsx';
 import { useSelector, useDispatch } from 'react-redux';
 import { drinkCoffee, eatSnack, takeNap, study } from '../actions/moodActions.js';
 
-export const Moods = () => {
-  const { coffees, snacks, naps, studies } = useSelector(store);
+const Moods = () => {
+  const { coffees, snacks, naps, studies } = useSelector(state => state);
   const dispatch = useDispatch();
   
   const handleSelection = action => {
@@ -24,3 +24,5 @@ export const Moods = () => {
       </>
     );
   }
+
+  export default Moods;
