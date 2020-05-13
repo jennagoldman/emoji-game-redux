@@ -15,4 +15,11 @@ describe('moods reducer', () => {
     const newState = reducer(state, action);
     expect(newState).toEqual({ snacks: 2 })
   })
+
+  it('handles the takeNap action', () => {
+    const state = { naps: 100 };
+    const action = takeNap();
+    const newState = reducer(state, action);
+    expect(newState).toEqual({ naps: 101 })
+  })
 })
