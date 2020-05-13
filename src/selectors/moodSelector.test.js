@@ -22,4 +22,15 @@ describe('mood selector', () => {
     const face = getFace(state);
     expect(face).toEqual('🤬')
   })
+
+  it('gets a nauseous face', () => {
+    const state = {
+      coffees: 4,
+      snacks: 0,
+      naps: 0,
+      studies: 5
+    }
+    const face = getFace(state);
+    expect(face).toEqual('🤮')
+  })
 })
