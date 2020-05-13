@@ -13,3 +13,5 @@ export const getFace = state => {
 
   return '😀';
 };
+
+export const getState = state => state;

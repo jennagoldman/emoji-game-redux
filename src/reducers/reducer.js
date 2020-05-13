@@ -18,6 +18,7 @@ export default function reducer(state = initialState, action) {
     case STUDY:
       return {...state, studies: state.studies + 1};
     default:
-      return console.log(`unhandled type: ${action.type}`);
+      console.log(`unhandled type: ${action.type}`)
+      return state;
   }
 }
