@@ -15,10 +15,10 @@ const Moods = () => {
   return (
       <>
         <Controls>
-          <button onClick={() => handleSelection(drinkCoffee)}>coffee - {coffees}</button>
-          <button onClick={() => handleSelection(eatSnack)}>snacks - {snacks}</button>
-          <button onClick={() => handleSelection(takeNap)}>naps - {naps}</button>
-          <button onClick={() => handleSelection(study)}>studies - {studies}</button>
+          <button onClick={() => handleSelection(drinkCoffee())}>coffee - {coffees}</button>
+          <button onClick={() => handleSelection(eatSnack())}>snacks - {snacks}</button>
+          <button onClick={() => handleSelection(takeNap())}>naps - {naps}</button>
+          <button onClick={() => handleSelection(study())}>studies - {studies}</button>
         </Controls>
         <Face />
       </>
